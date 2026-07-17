@@ -1,0 +1,20 @@
+# CODEOWNERS — automatically request the right reviewer for each folder.
+# Format:  <path>   <@github-handle or @org/team>
+# The LAST matching pattern wins, so keep the catch-all first.
+#
+# Organisers own everything by default (protects shared root files):
+*                                   @deep-learning-indaba/organisers
+
+# Each session leader owns their own folder. Fill in GitHub handles as you get them:
+# /practicals/intro-to-agentic-ai/                  @handle   # David Agbolade
+# /practicals/math-behind-neural-networks/          @handle   # Pelumi Victor, Catherine Essuman
+# /practicals/faster-transformers-with-triton/      @handle   # Ayomide Odumakinde, Katherine O. Olowookere, Adeniyi Mayokun
+# /practicals/understanding-model-alignment/        @handle   # Michael Mollel, Winnie Mangeni, Innocent Charles
+# /practicals/ai-lab-partner-agents-for-biology/    @handle   # Natasha Latysheva, Sebastian Bodenstein, Kyle Taylor, Adam Kosiorek
+# /practicals/graph-neural-networks/                @handle   # Nataram Odumo, Nwandu Christian, Godbless James
+# /practicals/responsible-and-sovereign-ai/         @handle   # Blessing Ogbuokiri
+# /practicals/cloud-gpu-infrastructure/             @handle   # Chisom Chinwuba, Sheriff Issaka, Opemipo Durodola
+# /skills/ml-research-from-the-margins/             @handle   # Steven Kolawole
+# /skills/adversarial-thinking-in-ai-systems/       @handle   # Manar Hamed
+# /skills/on-device-ai-applications/                @handle   # Jesse-Paul Osemeke
+# /skills/scientific-narrative-reading-writing/     @handle   # Castro Gbêmêmali

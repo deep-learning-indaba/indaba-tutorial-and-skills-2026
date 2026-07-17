@@ -1,0 +1,20 @@
+*.DS_Store
+
+*.ipynb_checkpoints/
+# Data & model artifacts — host large files externally, don't commit them
+*.csv
+*.h5
+*.ckpt
+*.pt
+*.pth
+*.npz
+*.zip
+data/
+checkpoints/
+wandb/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
