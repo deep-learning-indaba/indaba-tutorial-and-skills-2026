@@ -24,7 +24,7 @@ Both notebooks are designed to run on **Google Colab** with no local setup requi
 
 | Notebook | Open in Colab |
 |:--|:--|
-| Tutorial (follow-along) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1xeVakaWhfxsSkvbjWrb6J4Z8J_LMM_dz) |
+| Tutorial (follow-along) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15CPNugK4Uj49ePu2gUyEArG6SWdZ2Ol8) |
 | Exercise (DIY) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DMYdXx7mCOxoReOi9GbSd0TH06fLsh9n) |
 
 **Prerequisites:** Basic Python, some familiarity with calculus and linear algebra.
