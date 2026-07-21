@@ -24,8 +24,8 @@ Both notebooks are designed to run on **Google Colab** with no local setup requi
 
 | Notebook | Open in Colab |
 |:--|:--|
-| Tutorial (follow-along) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deep-learning-indaba/indaba-tutorial-and-skills-2026/blob/main/practicals/math-behind-neural-networks/The_Math_Behind_Neural_Networks_Tutorial.ipynb) |
-| Exercise (DIY) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deep-learning-indaba/indaba-tutorial-and-skills-2026/blob/main/practicals/math-behind-neural-networks/Neural_Network_By_Hand_Exercise.ipynb) |
+| Tutorial (follow-along) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1xeVakaWhfxsSkvbjWrb6J4Z8J_LMM_dz) |
+| Exercise (DIY) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DMYdXx7mCOxoReOi9GbSd0TH06fLsh9n) |
 
 **Prerequisites:** Basic Python, some familiarity with calculus and linear algebra.
 
