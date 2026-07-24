@@ -1,0 +1,9 @@
+# Local dependencies for running either notebook/script outside of uv or Colab
+# (google.colab is provided by the Colab runtime itself and isn't installable locally,
+# so the download-button cells in the Colab version won't run outside of Colab).
+huggingface-hub[hf_transfer]==1.20.0
+datasets
+numpy
+pandas==3.0.3
+matplotlib==3.11.0
+marimo
