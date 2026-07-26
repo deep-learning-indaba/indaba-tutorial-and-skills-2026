@@ -1,0 +1,5 @@
+# This session's sample dataset is intentionally tracked in git — it's
+# well under the repo's ~10MB limit (see CONTRIBUTING.md), so the root
+# .gitignore's blanket data/ and *.csv rules are un-ignored for this folder.
+!data/
+!data/*.csv
