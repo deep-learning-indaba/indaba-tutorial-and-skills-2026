@@ -1,0 +1,13 @@
+# Open models, run locally. No API key required.
+transformers>=4.44
+huggingface_hub>=0.24
+accelerate>=0.33
+sentence-transformers>=3.0
+torch>=2.2
+
+# Numerics for the tiny vector store (cosine similarity)
+numpy>=1.24
+
+# Notebook environment (skip if using Google Colab)
+jupyterlab>=4.0
+ipykernel>=6.0
