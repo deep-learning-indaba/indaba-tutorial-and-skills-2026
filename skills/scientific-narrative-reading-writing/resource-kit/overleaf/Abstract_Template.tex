@@ -1,0 +1,62 @@
+% =============================================================================
+%  Abstract_Template.tex — the 3-sentence abstract exercise, standalone
+%  Mastering the Scientific Narrative · Deep Learning Indaba 2026
+%
+%  A dependency-free extract of the abstract exercise from
+%  indaba-narrative-template.zip (main.tex), for anyone who wants just the
+%  writing scaffold without the full paper skeleton or the indaba_narrative
+%  package. Compiles standalone with a plain \documentclass{article}.
+%
+%  Rules:
+%   * Sentence 1 (Context + Gap) must contain a place and a number.
+%   * Sentence 2 (Method) must name the thing you built and what is new.
+%   * Sentence 3 (Results + Impact) must contain a metric, a value, and a
+%     NAMED baseline.
+%   * No sentence may contain "very", "novel" or "promising" without a
+%     number next to it.
+% =============================================================================
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\title{\bfseries [Working title: Method]: [what it does] for [problem]}
+\author{Your Name \and Co-author Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% --- S1 · CONTEXT + GAP -----------------------------------------------------
+% Where, who, how big is the stake — and what blocks the world today?
+% e.g. "In West Africa, cassava mosaic and brown-streak disease destroy up
+% to 40% of yields for smallholder farmers, yet existing vision-based
+% diagnostic models assume cloud connectivity and high-end hardware that
+% rural farms do not have."
+\textbf{[S1 — Context + Gap:]} \dots
+
+% --- S2 · METHOD -------------------------------------------------------------
+% Your one-line answer: what did you build, and what is new about it?
+% e.g. "We introduce CropGuard, a quantized and pruned convolutional
+% detector that runs entirely offline on low-end Android devices, trained
+% on a new dataset of 12,406 field images collected across 42 farms in
+% Guinea and Nigeria and released under FAIR principles."
+\textbf{[S2 — Method:]} \dots
+
+% --- S3 · RESULTS + IMPACT ---------------------------------------------------
+% Named metrics, exact numbers, named baselines — then the door it opens.
+% e.g. "CropGuard reaches 78.3% top-1 accuracy while cutting inference
+% latency by 40% relative to MobileNetV3, enabling farmers to diagnose
+% disease in the field with no internet connection."
+\textbf{[S3 — Results + Impact:]} \dots
+\end{abstract}
+
+% Self-check before you move on:
+%  [ ] A stranger could FUND this project after these 3 sentences.
+%  [ ] Sentence 3 contains at least one NUMBER.
+%  [ ] The gap (what blocks the world today) is explicit.
+%  [ ] The region/context is named — an anchor, not a footnote.
+%  [ ] Zero empty adjectives ("good", "promising", "novel") survive.
+
+\end{document}

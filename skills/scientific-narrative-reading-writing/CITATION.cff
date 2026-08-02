@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use or adapt this workshop material, please cite it as below."
+type: presentation
+title: >-
+  Mastering the Scientific Narrative: A Practical Guide to Reading and
+  Writing High-Impact AI Research Papers
+authors:
+  - family-names: Hounmenou
+    given-names: "Castro Gbêmêmali"
+    affiliation: "University of Labé (UL); CERFIG, Guinea"
+    email: castro.hounmenou@univ-labe.edu.gn
+abstract: >-
+  A 90-minute hands-on Skill Session for the Deep Learning Indaba 2026,
+  teaching African early-career AI researchers to read papers efficiently
+  with Keshav's 3-Pass method and to write high-impact papers using a
+  four-step blueprint (Frame, Core, Impact, Honesty), under the theme
+  "Sovereign Intelligence".
+keywords:
+  - scientific writing
+  - AI research
+  - Deep Learning Indaba
+  - Sovereign Intelligence
+  - research methodology
+  - African AI
+license: MIT
+repository-code: "https://github.com/Castro2026/DeepLearningIndaba2026-Scientific-Narrative-Academy"
+date-released: "2026-07-17"

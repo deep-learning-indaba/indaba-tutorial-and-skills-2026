@@ -1,0 +1,7 @@
+Mastering the Scientific Narrative — Resource Kit
+Deep Learning Indaba 2026 · Castro Gbêmêmali Hounmenou (University of Labé / CERFIG)
+
+https://github.com/Castro2026/DeepLearningIndaba2026-Scientific-Narrative-Academy
+
+Written on every slide as a short URL / QR code for participants without a
+smartphone or with no connectivity in the room.

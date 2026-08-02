@@ -1,0 +1,13 @@
+title: "Mastering the Scientific Narrative"
+description: >-
+  Deep Learning Indaba 2026 Skill Session — a practical guide to reading and
+  writing high-impact AI research papers, by Castro Gbêmêmali Hounmenou
+  (University of Labé / CERFIG, Guinea).
+theme: minima
+baseurl: "/DeepLearningIndaba2026-Scientific-Narrative-Academy"
+url: "https://castro2026.github.io"
+repository: Castro2026/DeepLearningIndaba2026-Scientific-Narrative-Academy
+
+# Enable with: bundle exec jekyll serve
+# GitHub Pages: Settings → Pages → Source → /website (or copy this folder's
+# contents to the repository root / a gh-pages branch).

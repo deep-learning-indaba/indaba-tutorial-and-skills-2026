@@ -1,0 +1,172 @@
+%=====================================================================
+%  FIRST-PAPER TEMPLATE — Mastering the Scientific Narrative
+%  Resource Kit · C. G. Hounmenou (University of Labé / CERFIG)
+%---------------------------------------------------------------------
+%  HOW TO USE
+%  1) Easiest: go to https://overleaf.com → New Project → Upload this
+%     folder (main.tex + references.bib). Compiles out of the box.
+%  2) For a REAL submission, download the OFFICIAL style of your venue
+%     and paste your sections into it (never edit venue .sty files):
+%       · NeurIPS  : https://neurips.cc  → "Paper Information / Style files"
+%       · ICLR     : https://iclr.cc     → "Call for Papers / Author guide"
+%       · ACL/AfricaNLP : https://github.com/acl-org/acl-style-files
+%     Overleaf also hosts official templates: Menu → Templates → search
+%     the venue name.
+%  3) Every % comment below is a coach whispering. Delete them as you go.
+%=====================================================================
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Packages you will almost always need ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}      % figures
+\usepackage{booktabs}      % professional tables (\toprule,\midrule,\bottomrule)
+\usepackage{amsmath,amssymb,bm} % math; \bm{} for bold vectors
+\usepackage{hyperref}      % clickable links & refs
+\usepackage{xcolor}
+\usepackage[numbers]{natbib} % citations: \citep{key} (Author, 2020) / \citet{key}
+
+% ---------- Notation shortcuts: define ONCE, use everywhere ----------
+% Consistency of notation is a top reviewer criterion (Checklist §2).
+\newcommand{\x}{\bm{x}}          % vector: bold lowercase
+\newcommand{\X}{\bm{X}}          % matrix: bold uppercase
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\model}{AgroNet}     % <- rename once, updates everywhere
+
+\title{%
+% TITLE = your 15-word promise. Three formulas that work:
+%   [Method]: [What it does] for [Problem]
+%   [Question or claim as hook]?
+%   [Resource]: a [scale] [type] for [context]
+% Test: can a stranger guess method + problem + context from it alone?
+\model{}: Lightweight Offline Detection of Cassava Diseases\\
+for Low-End Mobile Devices}
+
+\author{%
+  First Author\thanks{Equal contribution / corresponding author: email@univ.edu} \\
+  University of Labé, Guinea
+  \and
+  Second Author \\
+  University of Lagos, Nigeria
+% Your African affiliation is your lab entering the world map — state it
+% proudly and completely (department, institution, country).
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+%=====================================================================
+\begin{abstract}
+% THE 5 MOVES (compress to 3 sentences if space is tight):
+% [CONTEXT] stakes + numbers .......................................
+Cassava feeds over 500 million Africans, yet mosaic and brown-streak
+diseases destroy up to 40\% of yields.
+% [GAP] what blocks today's solutions ..............................
+Existing vision models for plant diagnosis require cloud connectivity
+that is absent in most rural areas.
+% [METHOD] one sentence, one system, one key property ..............
+We introduce \model{}, an offline, quantized convolutional network
+optimized for low-end mobile devices.
+% [RESULTS] data + hard numbers, never adjectives ..................
+Trained on 12{,}406 leaf images from 42 farms in Guinea and Nigeria,
+\model{} reaches 78.3\% top-1 accuracy while cutting on-device latency
+by 40\% versus MobileNetV3.
+% [IMPACT] the door you open .......................................
+We release our dataset, code and models to support agricultural AI
+across the continent.
+\end{abstract}
+
+%=====================================================================
+\section{Introduction}
+% THE FUNNEL: general problem -> specific gap -> your contribution.
+% Para 1 — CONTEXT: why the world should care (stakes, numbers, refs).
+% Para 2 — GAP: what today's solutions cannot do, and why it matters
+%          here (connectivity, compute, data coverage...). Cite fairly.
+% Para 3 — CONTRIBUTION: "In this paper, we introduce ..." Answer the
+%          Heilmeier questions: what? how is it done today? what is
+%          new? who cares — locally AND globally?
+% END WITH THE EXPLICIT LIST (reviewers hunt for it):
+Our contributions are threefold:
+\begin{itemize}
+  \item \textbf{A new method:} we propose \model{}, the first \ldots
+        designed for offline, low-compute settings (\S\ref{sec:method});
+  \item \textbf{A new resource:} we release a dataset of 12{,}406
+        images collected across 42 farms (\S\ref{sec:data});
+  \item \textbf{New evidence:} \model{} outperforms strong baselines
+        by 3.5 points while being $7\times$ faster (\S\ref{sec:results}).
+\end{itemize}
+% RULE: contributions are PROMISES; Results are PROOFS. Claim 3, prove 3.
+
+%=====================================================================
+\section{Related Work}
+% Position yourself in the conversation — 3 mini-paragraphs, each:
+%   "Prior line of work A did X \citep{...}. However, ..." -> your gap.
+% Be generous and precise; the authors you cite may review you.
+
+%=====================================================================
+\section{Method}\label{sec:method}
+% Gold standard: a competent reader could RE-IMPLEMENT from text alone.
+% - Define every symbol at first use; keep the conventions above.
+% - Figures > prose for architectures (make Figure 1 tell the story).
+Let $\x \in \R^{d}$ denote an input image representation\ldots
+
+%=====================================================================
+\section{Dataset}\label{sec:data}
+% The dataset biography (Checklist §2): provenance (where, when, by
+% whom, consent/ethics), size & composition, preprocessing, splits
+% (by FARM / by SPEAKER — no leakage), known biases, license.
+% Publish a dataset card (Gebru et al., 2021) and archive with a DOI
+% (Zenodo is free) — this is FAIR data \citep{wilkinson2016fair}.
+
+%=====================================================================
+\section{Experiments and Results}\label{sec:results}
+% Protocol first: metrics (with formulas), splits, seeds, baselines.
+% Report mean +/- std over >= 3 seeds. One figure = one message.
+
+\begin{table}[t]
+  \centering
+  \caption{Top-1 accuracy (\%) on the cassava test set, mean$\pm$std
+  over 10 seeds. Best in \textbf{bold}. Latency on a Tecno Spark 8.}
+  \label{tab:main}
+  \begin{tabular}{lcc}
+    \toprule
+    Model & Accuracy (\%) & Latency (ms) \\
+    \midrule
+    ResNet-50      & 71.2 $\pm$ 0.9 & 412 \\
+    MobileNetV3    & 74.8 $\pm$ 0.8 & 96  \\
+    EfficientNet-B0& 76.1 $\pm$ 0.7 & 198 \\
+    \textbf{\model{} (ours)} & \textbf{78.3 $\pm$ 0.5} & \textbf{58} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% Figures: export vector PDF from matplotlib (plt.savefig('fig.pdf'))
+% \begin{figure}[t]\centering
+%   \includegraphics[width=.8\linewidth]{figures/pareto.pdf}
+%   \caption{Self-contained caption: what, where, and the takeaway.}
+% \end{figure}
+
+%=====================================================================
+\section{Discussion and Limitations}
+% Discussion: interpret — WHY it wins, WHEN it fails, what it means
+% for deployment. Do not repeat the numbers.
+% Limitations — the trust section; specific and honest, e.g.:
+% "\model{} was validated on three cassava varieties; performance under
+%  extreme low-light and on 2G-only devices remains untested."
+% African-context constraints are valuable observations — own them.
+
+%=====================================================================
+\section{Conclusion}
+% One paragraph: contribution + strongest number + the future work
+% your limitations just wrote for you.
+
+%=====================================================================
+% Reproducibility: link an anonymized repo during review; public +
+% Zenodo DOI at camera-ready. One command (run.sh) reproduces Table 1.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
