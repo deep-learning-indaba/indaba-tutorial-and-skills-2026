@@ -61,6 +61,10 @@ Note the Colab notebook's download-button cells import `google.colab`, which onl
 - Enough disk space to hold the FP16 and quantised GGUF versions of both models
 - A GPU is recommended (e.g. Colab's T4 runtime) for faster imatrix calibration, though everything also runs on CPU
 
+## Demo
+
+A walkthrough of the quantisation pipeline is available on YouTube: [https://youtu.be/0lQsvnV3i3Y](https://youtu.be/0lQsvnV3i3Y)
+
 ## Feedback
 
 All feedback is welcome, just be respectful about it please :). You can reach me at jesseosems123[at]gmail[dot]com or on [LinkedIn](https://linkedin.com/in/jp-osemeke). If you have any questions as well, topics you'd like to discuss or if you'd like to collaborate, feel free to reach out. Thanks!
